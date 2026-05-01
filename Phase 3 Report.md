@@ -5,7 +5,7 @@ Touchdown Mechanics
 
 Aditya Sally, Anuj Shastry, Emily Lopez, Joshua Raya, Kevin Ruiz Lopez, Sanad Dababneh  
 Yi Ren  
-April 27, 2026  
+May 1, 2026  
 
 ---
 
@@ -39,7 +39,8 @@ April 27, 2026
 7. Design Improvements for Future Iterations  
  7.1 Structural and Geometric Modifications  
  7.2 Material and Manufacturing Improvements  
- 7.3 Assembly and Reliability Enhancements  
+ 7.3 Assembly and Reliability Enhancements
+8. Conclusion  
 
 ---
 
@@ -182,41 +183,41 @@ The most time-consuming aspect of the process was the CAD assembly in SolidWorks
 
 ### 4.1 Procedure
 
-The testing and evaluation process began with numerical simulations conducted in ANSYS. The SolidWorks model was scaled to match the dimensions of the 3D printed prototype, and corresponding loading conditions were applied to approximate those expected in the full-scale system. :contentReference[oaicite:0]{index=0}  
+The testing and evaluation process began with numerical simulations conducted in ANSYS. The SolidWorks model was scaled to match the dimensions of the 3D printed prototype, and corresponding loading conditions were applied to approximate those expected in the full-scale system.
 
-A static structural analysis was performed to estimate stress distribution, deformation, and the overall factor of safety. In addition, an eigenvalue buckling analysis was conducted to verify that structural instability would not occur prior to material yielding. :contentReference[oaicite:1]{index=1}  
+A static structural analysis was performed to estimate stress distribution, deformation, and the overall factor of safety. In addition, an eigenvalue buckling analysis was conducted to verify that structural instability would not occur prior to material yielding.  
 
-Following the simulation phase, a physical prototype was constructed by printing out all the individual components and then assembling them together. The assembly was completed using pinned joints to allow rotational motion, with adhesive applied to secure the pins in place. :contentReference[oaicite:2]{index=2}  
+Following the simulation phase, a physical prototype was constructed by printing out all the individual components and then assembling them together. The assembly was completed using pinned joints to allow rotational motion, with adhesive applied to secure the pins in place.
 
-Experimental testing was conducted by incrementally applying loads to the structure through the axle connected to the wheel. Loading began at low magnitudes to verify structural integrity and was gradually increased until failure occurred. This approach enabled identification of failure locations and critical load thresholds for comparison with simulation results. :contentReference[oaicite:3]{index=3}  
+Experimental testing was conducted by incrementally applying loads to the structure through the axle connected to the wheel. Loading began at low magnitudes to verify structural integrity and was gradually increased until failure occurred. This approach enabled identification of failure locations and critical load thresholds for comparison with simulation results.   
 
 ---
 
 ### 4.2 Results
 
-The static structural analysis conducted in ANSYS provided insight into the stress distribution and deformation behavior of the system under the applied loading conditions. The results indicated that the most critical stress concentrations occurred at the lower hinge joints located near the wheel. These regions experienced the highest stresses due to their role in transferring load between the structural members and the ground interface and their relatively smaller areas. :contentReference[oaicite:4]{index=4}  
+The static structural analysis conducted in ANSYS provided insight into the stress distribution and deformation behavior of the system under the applied loading conditions. The results indicated that the most critical stress concentrations occurred at the lower hinge joints located near the wheel. These regions experienced the highest stresses due to their role in transferring load between the structural members and the ground interface and their relatively smaller areas.
 
-More specifically, the maximum von Mises stress was observed at the axle–wheel interface, where the load was directly applied. This is consistent with expectations, as this location serves as the primary load bearing point and experiences both shear and bending effects. In addition to stress concentration, the simulation showed that the largest total deformation occurred at the upper hinge of the lower linkage assembly. This deformation pattern suggests that the structure experiences a combination of bending and rotational motion under load, with displacement propagating upward from the point of load application. :contentReference[oaicite:5]{index=5}  
+More specifically, the maximum von Mises stress was observed at the axle–wheel interface, where the load was directly applied. This is consistent with expectations, as this location serves as the primary load bearing point and experiences both shear and bending effects. In addition to stress concentration, the simulation showed that the largest total deformation occurred at the upper hinge of the lower linkage assembly. This deformation pattern suggests that the structure experiences a combination of bending and rotational motion under load, with displacement propagating upward from the point of load application.
 
-The eigenvalue buckling analysis further indicated that the structure was not susceptible to buckling under the applied loads, as the predicted critical buckling load exceeded the maximum applied load in the simulation. This result suggests that material yielding, rather than instability, would govern failure in the idealized model. :contentReference[oaicite:6]{index=6}  
+The eigenvalue buckling analysis further indicated that the structure was not susceptible to buckling under the applied loads, as the predicted critical buckling load exceeded the maximum applied load in the simulation. This result suggests that material yielding, rather than instability, would govern failure in the idealized model.  
 
-During experimental testing, the physical prototype demonstrated the ability to support progressively increasing loads without immediate failure, confirming a degree of structural robustness. However, as the applied load approached higher magnitudes, localized weaknesses began to emerge. Unlike the simulation results, failure consistently occurred at the pin connections rather than at the hinge bodies or axle interface. :contentReference[oaicite:7]{index=7}  
+During experimental testing, the physical prototype demonstrated the ability to support progressively increasing loads without immediate failure, confirming a degree of structural robustness. However, as the applied load approached higher magnitudes, localized weaknesses began to emerge. Unlike the simulation results, failure consistently occurred at the pin connections rather than at the hinge bodies or axle interface.  
 
-The failure mode was characterized by deformation and eventual separation at the pinned joints, accompanied by the detachment of the adhesive used to secure the pins. The maximum load sustained by the physical model prior to failure was lower than the theoretical prediction obtained from ANSYS, indicating a discrepancy between the modeled and real world behavior. Despite this difference, the general deformation trends observed experimentally were qualitatively consistent with the simulation results. :contentReference[oaicite:8]{index=8}  
+The failure mode was characterized by deformation and eventual separation at the pinned joints, accompanied by the detachment of the adhesive used to secure the pins. The maximum load sustained by the physical model prior to failure was lower than the theoretical prediction obtained from ANSYS, indicating a discrepancy between the modeled and real world behavior. Despite this difference, the general deformation trends observed experimentally were qualitatively consistent with the simulation results.  
 
 ---
 
 ### 4.3 Interpretation
 
-The differences observed between the theoretical predictions and experimental results highlight several important limitations and assumptions within the modeling and assembly processes. :contentReference[oaicite:9]{index=9}  
+The differences observed between the theoretical predictions and experimental results highlight several important limitations and assumptions within the modeling and assembly processes.   
 
-One primary source of discrepancy is the simplified representation of joints in the ANSYS model. In the simulation, idealized joint conditions were used to replicate pin connections, which do not fully capture the stress concentrations, contact interactions, and material imperfections present in physical pins. As a result, the simulation underestimated the chance of failure at these locations and instead predicted failure in the adjacent hinges. :contentReference[oaicite:10]{index=10}  
+One primary source of discrepancy is the simplified representation of joints in the ANSYS model. In the simulation, idealized joint conditions were used to replicate pin connections, which do not fully capture the stress concentrations, contact interactions, and material imperfections present in physical pins. As a result, the simulation underestimated the chance of failure at these locations and instead predicted failure in the adjacent hinges.  
 
-Additionally, the method used to secure the pins in the physical prototype introduced unintended weaknesses. The use of hot glue created non-uniform load transfer and stress concentrations at the pin interfaces. These factors significantly reduced the load-carrying capacity of the joints and contributed to premature failure during testing. :contentReference[oaicite:11]{index=11}  
+Additionally, the method used to secure the pins in the physical prototype introduced unintended weaknesses. The use of hot glue created non-uniform load transfer and stress concentrations at the pin interfaces. These factors significantly reduced the load-carrying capacity of the joints and contributed to premature failure during testing.   
 
-Another important consideration is the difference between the idealized material properties used in the simulation and those of the actual 3D-printed components. 3D printing can include internal defects and reduced material strength compared to the homogeneous material assumptions used in ANSYS. These factors further contribute to the reduced experimental load capacity. :contentReference[oaicite:12]{index=12}  
+Another important consideration is the difference between the idealized material properties used in the simulation and those of the actual 3D-printed components. 3D printing can include internal defects and reduced material strength compared to the homogeneous material assumptions used in ANSYS. These factors further contribute to the reduced experimental load capacity.   
 
-It is also important to note that the applied loads in both the simulation and experimental testing were not intended to replicate the actual loads experienced by an F-14 Tomcat. Instead, the loads were scaled to suit the dimensions and materials of the prototype model. As such, the purpose of this analysis was not to directly simulate real-world operational conditions, but rather to evaluate the relative structural behavior, identify critical failure points, and validate general design assumptions. :contentReference[oaicite:13]{index=13}  
+It is also important to note that the applied loads in both the simulation and experimental testing were not intended to replicate the actual loads experienced by an F-14 Tomcat. Instead, the loads were scaled to suit the dimensions and materials of the prototype model. As such, the purpose of this analysis was not to directly simulate real-world operational conditions, but rather to evaluate the relative structural behavior, identify critical failure points, and validate general design assumptions.   
 
 ## 5. Comparison with Analytical and Simulation Predictions
 
@@ -244,41 +245,43 @@ Another discrepancy lies in the material difference between the simulation model
 
 ### 6.1 Observed Failures and Defects
 
-The first prototype did not fail structurally, but it failed functionally, which in some ways was just as big of a problem. The main issue was that several parts simply did not fit together the way they were supposed to, especially around the moving joints. The joint holes were too tight, which made it nearly impossible to connect the parts while still allowing them to rotate freely. Since the whole point of the landing gear mechanism is smooth movement between links, this basically stopped the prototype from working the way it was designed to. :contentReference[oaicite:0]{index=0}  
+The first prototype did not fail structurally, but it failed functionally, which in some ways was just as big of a problem. The main issue was that several parts simply did not fit together the way they were supposed to, especially around the moving joints. The joint holes were too tight, which made it nearly impossible to connect the parts while still allowing them to rotate freely. Since the whole point of the landing gear mechanism is smooth movement between links, this basically stopped the prototype from working the way it was designed to.   
 
-The size of the first print made things worse. Everything was too small, which made alignment harder and made the parts more sensitive to even small printing errors. Trying to assemble something that small with tight tolerances by hand was frustrating and showed us quickly that what looks fine in CAD does not always translate the same way in real life. We also realized too late that we needed more than one prototype iteration, because the first version revealed problems that were not visible in the digital model at all. The team ended up solving the joint issue by using hot glue and toothpicks to hold the connections together while still giving the mechanism enough freedom to move. It was not the most elegant engineering solution, but it worked well enough for a prototype and allowed us to actually demonstrate the landing gear motion. :contentReference[oaicite:1]{index=1}  
+The size of the first print made things worse. Everything was too small, which made alignment harder and made the parts more sensitive to even small printing errors. Trying to assemble something that small with tight tolerances by hand was frustrating and showed us quickly that what looks fine in CAD does not always translate the same way in real life. We also realized too late that we needed more than one prototype iteration, because the first version revealed problems that were not visible in the digital model at all. The team ended up solving the joint issue by using hot glue and toothpicks to hold the connections together while still giving the mechanism enough freedom to move. It was not the most elegant engineering solution, but it worked well enough for a prototype and allowed us to actually demonstrate the landing gear motion.   
 
 ---
 
 ### 6.2 Root Cause Analysis
 
-The root cause of most of the early problems came down to the gap between what the CAD model showed and what the 3D printer actually produced. In the model, everything fit perfectly because the dimensions were exact. In reality, 3D-printed parts do not come out with perfect accuracy. Small holes tend to print slightly undersized, and mating parts can come out slightly oversized, which created interference at the joints and made assembly difficult from the start. :contentReference[oaicite:2]{index=2}  
+The root cause of most of the early problems came down to the gap between what the CAD model showed and what the 3D printer actually produced. In the model, everything fit perfectly because the dimensions were exact. In reality, 3D-printed parts do not come out with perfect accuracy. Small holes tend to print slightly undersized, and mating parts can come out slightly oversized, which created interference at the joints and made assembly difficult from the start.   
 
-The original design also did not account enough for the kind of clearance a moving mechanism actually needs. For a part that just sits in place, tight fits are fine. But for rotating joints, you need extra room to reduce friction and allow smooth motion. Without that clearance, the links could not rotate freely and the whole mechanism felt stiff and restricted during the first assembly attempt. :contentReference[oaicite:3]{index=3}  
+The original design also did not account enough for the kind of clearance a moving mechanism actually needs. For a part that just sits in place, tight fits are fine. But for rotating joints, you need extra room to reduce friction and allow smooth motion. Without that clearance, the links could not rotate freely and the whole mechanism felt stiff and restricted during the first assembly attempt.   
 
-The small scale of the first print made all of this worse. When you scale parts down, small dimensional errors become much more significant. A tolerance mistake that might be manageable at full size can completely lock up a joint at a smaller scale. That is ultimately why we had to resize and reprint, because the problems were not going to go away without changing the approach. :contentReference[oaicite:4]{index=4}  
+The small scale of the first print made all of this worse. When you scale parts down, small dimensional errors become much more significant. A tolerance mistake that might be manageable at full size can completely lock up a joint at a smaller scale. That is ultimately why we had to resize and reprint, because the problems were not going to go away without changing the approach. 
 
 ---
 
 ### 6.3 Design and Fabrication Mistakes
 
-The first clear mistake was not accounting for 3D printing tolerances when designing the joints. The holes were drawn too tight in the model, so when the parts came out of the printer, there was not enough clearance for the mechanism to move or even fully assemble. Going forward, the joint holes should be designed slightly larger, and pins should be given more clearance from the start to allow free rotation without forcing parts together. :contentReference[oaicite:5]{index=5}  
+The first clear mistake was not accounting for 3D printing tolerances when designing the joints. The holes were drawn too tight in the model, so when the parts came out of the printer, there was not enough clearance for the mechanism to move or even fully assemble. Going forward, the joint holes should be designed slightly larger, and pins should be given more clearance from the start to allow free rotation without forcing parts together.   
 
-The second mistake was starting the 3D printing too late. Because the first prototype had so many fitment issues, we needed extra time to redesign, reprint, and test again. If printing had started earlier, there would have been more time to work through multiple versions and actually improve the design before the deadline instead of just fixing what we could at the end. :contentReference[oaicite:6]{index=6}  
+The second mistake was starting the 3D printing too late. Because the first prototype had so many fitment issues, we needed extra time to redesign, reprint, and test again. If printing had started earlier, there would have been more time to work through multiple versions and actually improve the design before the deadline instead of just fixing what we could at the end.   
 
-Printing the first prototype too small was another mistake that cost us time. The small size made the joints harder to handle, more sensitive to printing errors, and harder to fix without reprinting everything. Once we scaled it up, the assembly became noticeably easier and the mechanism was much more manageable. :contentReference[oaicite:7]{index=7}  
+Printing the first prototype too small was another mistake that cost us time. The small size made the joints harder to handle, more sensitive to printing errors, and harder to fix without reprinting everything. Once we scaled it up, the assembly became noticeably easier and the mechanism was much more manageable.   
 
-The last fabrication mistake was assuming the printed geometry alone would be enough to create smooth joint motion. We learned that moving joints need a connection method that holds the parts together without locking them in place. The toothpick and hot glue fix worked for the prototype, but the real lesson is that proper pins, bolts, washers, or spacers should have been designed into the system from the beginning. :contentReference[oaicite:8]{index=8}  
+The last fabrication mistake was assuming the printed geometry alone would be enough to create smooth joint motion. We learned that moving joints need a connection method that holds the parts together without locking them in place. The toothpick and hot glue fix worked for the prototype, but the real lesson is that proper pins, bolts, washers, or spacers should have been designed into the system from the beginning.  
 
 ---
 
 ### 6.4 Unexpected Outcomes and Insights
 
-One of the most surprising things was how well the prototype worked after just a few small adjustments. The first assembly was discouraging because nothing moved the way it was supposed to. But after switching to the toothpick and hot glue joint method and making a few other fixes, the mechanism started to actually function and demonstrate the landing gear motion. It was a reminder that prototyping is not about getting it perfect the first time, it is about figuring out what is wrong and fixing it. :contentReference[oaicite:9]{index=9}  
+One of the most surprising things was how well the prototype worked after just a few small adjustments. The first assembly was discouraging because nothing moved the way it was supposed to. But after switching to the toothpick and hot glue joint method and making a few other fixes, the mechanism started to actually function and demonstrate the landing gear motion. It was a reminder that prototyping is not about getting it perfect the first time, it is about figuring out what is wrong and fixing it.   
 
-The bigger insight for me was realizing how much a CAD model can hide. Looking at the digital assembly, everything seemed like it should work. The parts fit, the joints moved, the geometry looked right. But the physical prototype showed that friction, print tolerance, hole size, and alignment all interact in ways that are really hard to predict from a screen. Mechanical design is not just about having the right shape on paper. It is about making sure that shape can actually be built, put together, and used. :contentReference[oaicite:10]{index=10}  
+The bigger insight for me was realizing how much a CAD model can hide. Looking at the digital assembly, everything seemed like it should work. The parts fit, the joints moved, the geometry looked right. But the physical prototype showed that friction, print tolerance, hole size, and alignment all interact in ways that are really hard to predict from a screen. Mechanical design is not just about having the right shape on paper. It is about making sure that shape can actually be built, put together, and used.   
 
-The most important lesson from this whole process was that functional prototypes almost always need more than one iteration. The first print was not a failure, it was information. It told us exactly where the design fell short and what needed to change. After resizing, reprinting, and rethinking the joint connections, the final prototype performed significantly better. That experience reinforced something that I think applies beyond this project, which is that the willingness to go back, fix the problem, and try again is what separates a design that works from one that just looks good. :contentReference[oaicite:11]{index=11}  
+The most important lesson from this whole process was that functional prototypes almost always need more than one iteration. The first print was not a failure, it was information. It told us exactly where the design fell short and what needed to change. After resizing, reprinting, and rethinking the joint connections, the final prototype performed significantly better. That experience reinforced something that I think applies beyond this project, which is that the willingness to go back, fix the problem, and try again is what separates a design that works from one that just looks good. 
+
+---
 
 ## 7. Design Improvements for Future Iterations
 
@@ -307,3 +310,13 @@ The landing gear assembly consists of eight primary components: the wheel, wheel
 The folding hinge and suspension hinge components, which govern the inward collapsing motion of the linkage during retraction, represent the most kinematically sensitive elements of the assembly. Any misalignment at these interfaces during assembly can propagate into binding or uneven load distribution across the linkage system. Future designs should incorporate self-aligning spherical bearings at these critical pin joints to compensate for minor angular deviations introduced during fabrication or assembly, improving reliability without requiring high-precision manual adjustment.  
 
 The fixed support, which anchors the entire system and represents the mounting interface to the aircraft structure, should also be revisited for improved load distribution. Since all reaction forces from the normal force of 56,700 lbs and drag force of 26,649 lbs are ultimately transferred through this component, future iterations should include a more distributed attachment footprint and gusset reinforcements to reduce stress concentration at the base mounting points. This would improve the structural reliability of the assembly under the dynamic loading conditions characteristic of carrier based operations.
+
+## 8. Conclusion
+
+This project successfully demonstrated the design, fabrication, and evaluation of an F-14–inspired landing gear system through a structured, multi-phase engineering approach. Beginning with conceptual design in Phase 1, progressing through detailed CAD modeling and analysis in Phase 2, and culminating in physical prototyping and testing in Phase 3, the project provided a comprehensive understanding of both theoretical and practical aspects of mechanical system design.
+
+The analytical and simulation results established a strong baseline for structural performance, indicating that the design met expected strength and stability requirements under scaled loading conditions. However, the transition from simulation to physical implementation revealed important discrepancies, particularly in joint behavior, material performance, and manufacturing limitations. These differences highlighted the impact of real-world factors such as tolerances, friction, and assembly constraints, which are often simplified or idealized in computational models.
+
+Despite these challenges, the final prototype was able to achieve the intended kinematic functionality, successfully demonstrating extension, load support, and retraction behavior. The iterative process of redesign, reprinting, and reassembly played a critical role in refining the system and improving overall performance. This process reinforced the importance of prototyping as a tool for identifying design flaws and validating assumptions beyond what can be observed in digital models.
+
+Overall, the project emphasized the importance of integrating engineering analysis with practical fabrication considerations. It also demonstrated that successful mechanical design requires not only accurate calculations and simulations, but also adaptability, iteration, and attention to manufacturability and assembly. The insights gained from this work provide a strong foundation for future improvements and highlight key areas where design refinement and material selection can further enhance system performance and reliability.
