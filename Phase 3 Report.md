@@ -1,7 +1,7 @@
 # Design and Analysis of F-14 Landing Gear System
 
 MEE 342: Principles of Mechanical Design  
-Touchdown Mechanics  
+## Touchdown Mechanics  
 
 Aditya Sally, Anuj Shastry, Emily Lopez, Joshua Raya, Kevin Ruiz Lopez, Sanad Dababneh  
 Yi Ren  
