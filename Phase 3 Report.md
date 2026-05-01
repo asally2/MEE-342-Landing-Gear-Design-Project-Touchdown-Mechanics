@@ -285,6 +285,13 @@ The most important lesson from this whole process was that functional prototypes
 
 ## 7. Design Improvements for Future Iterations
 
+<img width="776" height="510" alt="Screenshot 2026-05-01 at 13 00 03" src="https://github.com/user-attachments/assets/a580e103-edd5-46e0-8d1c-d9babab6ff60" />
+<img width="776" height="510" alt="Screenshot 2026-05-01 at 12 59 51" src="https://github.com/user-attachments/assets/6bb531a7-9322-4118-a6c9-4d11e13bcdae" />
+<img width="973" height="641" alt="Screenshot 2026-05-01 at 12 59 35" src="https://github.com/user-attachments/assets/d9156896-7ede-4222-82f4-30be9d1c1778" />
+<img width="1018" height="552" alt="Screenshot 2026-05-01 at 12 59 21" src="https://github.com/user-attachments/assets/b3d44fa1-da31-47aa-8c50-7d2cb67e8650" />
+<img width="989" height="552" alt="Screenshot 2026-05-01 at 12 59 00" src="https://github.com/user-attachments/assets/20213e69-f8dc-4796-9568-f169346f2ef0" />
+
+
 ### 7.1 Structural and Geometric Modifications
 
 One of the main areas for improvement lies in the geometry of the main landing gear strut. The current design is strong enough for carrier operations, it exhibits areas of stress concentration at the main strut. The engineering analysis identified the critical stress region as the interface between the lower hinge with the main strut, where the load transfer concentrations are most severe under the computed normal force 56,700 lbs and drag force 26,649 lbs. Although the current factor of safety of 6.8254 confirms the design is structurally sound, the geometry at this junction could be refined to redistribute peak stresses more evenly. Introducing larger fillet radii and tapered cross-section transition at the lower strut connection would smooth the load path and reduce the risk of fatigue cracking under repeated high cycle arrested landing loads.  
